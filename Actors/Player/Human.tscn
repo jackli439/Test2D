@@ -1,6 +1,6 @@
 [gd_scene load_steps=41 format=3 uid="uid://bmqumwlxycgt0"]
 
-[ext_resource type="Script" uid="uid://cc3gxwevhq5md" path="res://Actors/Player/human.gd" id="1_e662b"]
+[ext_resource type="Script" uid="uid://cc3gxwevhq5md" path="res://Actors/Player/Human.gd" id="1_e662b"]
 [ext_resource type="PackedScene" uid="uid://bro2cmjp038fh" path="res://Components/Control/PlayerInput/PlayerInputComponent.tscn" id="2_nfa4e"]
 [ext_resource type="PackedScene" uid="uid://c65j08lr7a1va" path="res://Components/Movement/VelocityComponent.tscn" id="3_nfa4e"]
 [ext_resource type="Resource" uid="uid://cr7xleyinhywi" path="res://Resource/playerHuman.tres" id="4_ak4mv"]
@@ -333,6 +333,7 @@ libraries = {
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 unique_name_in_owner = true
+root_node = NodePath("%AnimationTree/..")
 tree_root = SubResource("AnimationNodeStateMachine_oouhl")
 advance_expression_base_node = NodePath("..")
 anim_player = NodePath("../AnimationPlayer")
