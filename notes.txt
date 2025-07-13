@@ -1,0 +1,5 @@
+healthComponent - health var
+velocityComponent - velocity var
+controlComponent - inputs
+hitBoxComponent - 2DHitbox
+

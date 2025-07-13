@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://h1o4ttr8sbp2"]
+
+[ext_resource type="PackedScene" uid="uid://bmqumwlxycgt0" path="res://Actors/Player/Human.tscn" id="1_ig7tw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(67, 2)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="Human" parent="." instance=ExtResource("1_ig7tw")]

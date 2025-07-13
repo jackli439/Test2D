@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxoxaipaupig0"]
+
+[sub_resource type="GDScript" id="GDScript_etamo"]
+script/source = "class_name InputComponent extends Node2D
+
+var moveInput : Vector2
+
+func getMoveVector() -> Vector2:
+	return moveInput
+
+func handleMoveInputs(delta):
+	pass
+"
+
+[node name="Input" type="Node2D"]
+script = SubResource("GDScript_etamo")
